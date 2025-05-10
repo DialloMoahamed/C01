@@ -6,10 +6,5 @@
 # ls -1 permet de lister les fichiers dans le répertoire, un par ligne
 # wc -l permet de dénombrer les lignes de la sortie standard
 
-if [ -z "$1" ]; then
-  echo "Usage: $0 <dossier>"
-  exit 1
-fi
-
 count=$(ls -p "$1" | grep -v / | wc -l)
 echo "Le dossier $1 contient $count fichier(s)."
