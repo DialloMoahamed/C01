@@ -6,5 +6,10 @@
 # ls -1 permet de lister les fichiers dans le répertoire, un par ligne
 # wc -l permet de dénombrer les lignes de la sortie standard
 
-count=$(ls -p "$1" | grep -v / | wc -l)
+if [ ! -d "$1" ]; then
+  echo "Erreur : '$1' n'est pas un dossier valide."
+  exit 1
+fi
+
+count=$(find "$1" -maxdepth 1 -type f | wc -l)
 echo "Le dossier $1 contient $count fichier(s)."
