@@ -11,5 +11,5 @@ if [ ! -d "$1" ]; then
   exit 1
 fi
 
-count=$(find "$1" -maxdepth 1 -type f | wc -l)
+count=$(ls -l "$1" | grep "^-" | wc -l)
 echo "Le dossier $1 contient $count fichier(s)."
