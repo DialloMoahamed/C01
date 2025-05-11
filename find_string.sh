@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Vérifie si la chaîne à rechercher et le fichier sont fournis en arguments
-if [ -z "$1" ] || [ -z "$2" ]; then
-  echo "Usage: $0 <string> <file>"
-  exit 1
-fi
-
 search_string="$1"
 file="$2"
 

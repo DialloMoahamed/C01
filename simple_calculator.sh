@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Vérifie si trois arguments (nombre1, nombre2, opérateur) sont fournis
-if [ $# -ne 3 ]; then
-  echo "Usage: $0 <number1> <number2> <operator (+, -, *, /)>"
-  exit 1
-fi
-
 num1="$1"
 num2="$2"
 operator="$3"

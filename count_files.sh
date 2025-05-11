@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Vérifie si un répertoire est fourni en argument
-if [ -z "$1" ]; then
-  echo "Usage: $0 <directory>"
-  exit 1
-fi
-
 directory="$1"
 
 # Vérifie si le répertoire existe et est un répertoire
