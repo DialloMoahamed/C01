@@ -6,15 +6,6 @@ if [ ! -d "$1" ]; then
     exit 1
 fi
 
-# Compte les fichiers (non récursif)
-count=$(find "$1" -maxdepth 1 -type f | wc -l)
+count=$(find "$1" -maxdepth 1 -type f | wc -l | tr -d ' ')
+echo "Le dossier $1 contient $count fichier(s)."
 
-# Gestion du pluriel
-if [ "$count" -eq 1 ]; then
-    mot="fichier"
-else
-    mot="fichiers"
-fi
-
-# Affichage propre
-echo "Le dossier $1 contient $count $mot."
