@@ -6,5 +6,4 @@
 # ls -1 permet de lister les fichiers dans le répertoire, un par ligne
 # wc -l permet de dénombrer les lignes de la sortie standard
 
-count=$(ls -l "$1" | wc -l)
-echo "Le dossier $1 contient $count fichier(s)."
+echo "Le dossier $1 contient$(ls -l "$1" | wc -l) fichier(s)."
