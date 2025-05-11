@@ -1,3 +1,19 @@
+# 🐚 Piscine Codeloccol – Fiche d’exercices C01
+
+Thème : Scripts Shell Intermédiaires
+Objectif pédagogique : Approfondir la manipulation de la ligne de commande à l’aide de scripts Bash plus complexes.
+L’apprenant·e sera amené·e à traiter des données, utiliser des arguments et des opérations logiques, et structurer progressivement son raisonnement algorithmique.
+
+# 🛠 Compétences visées :
+
+- Gérer les arguments en ligne de commande
+
+- Utiliser des opérations conditionnelles
+
+- Lire des fichiers et en extraire de l’information
+
+- Effectuer des calculs simples via des scripts Bash
+
 # Scripts Shell - Niveau Intermédiaire
 
 Ce dossier contient une série de scripts Bash conçus pour pratiquer la manipulation de la ligne de commande à un niveau intermédiaire.

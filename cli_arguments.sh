@@ -1,11 +1,14 @@
 #!/bin/bash
+# Script qui affiche les arguments un par un
 
-# Afficher les arguments avec des séparateurs personnalisés
-while [ $# -gt 0 ]; do
-  if [ $# -gt 1 ]; then
-    echo -n "$1, "  # Afficher avec une virgule comme séparateur, sauf pour le dernier
-  else
-    echo "$1"  # Afficher sans séparateur pour le dernier
-  fi
-  shift
+# Vérifie s’il y a des arguments
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 arg1 [arg2 ...]"
+    exit 1
+fi
+
+i=1
+for arg in "$@"; do
+    echo "Argument $i: $arg"
+    ((i++))
 done
