@@ -1,13 +1,6 @@
 #!/bin/bash
 # Script calculatrice simple
 
-# Vérifie le nombre d'arguments
-if [ $# -ne 3 ]; then
-    echo "Usage: $0 <nombre1> <nombre2> <opérateur>"
-    echo "Opérateurs supportés : + - * /"
-    exit 1
-fi
-
 N1=$1
 N2=$2
 OP=$3

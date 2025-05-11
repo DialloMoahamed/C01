@@ -1,12 +1,6 @@
 #!/bin/bash
 # Script qui compte le nombre de fichiers dans un répertoire
 
-# Vérifie que l'utilisateur a passé un argument
-if [ $# -ne 1 ]; then
-    echo "Usage: $0 <nom_du_dossier>"
-    exit 1
-fi
-
 FOLDER="$1"
 
 # Vérifie si le répertoire existe

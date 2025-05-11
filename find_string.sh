@@ -1,12 +1,6 @@
 #!/bin/bash
 # Script qui recherche une chaîne dans un fichier
 
-# Vérifie le nombre d'arguments
-if [ $# -ne 2 ]; then
-    echo "Usage: $0 <nom_du_fichier> <chaîne_à_chercher>"
-    exit 1
-fi
-
 FILE="$1"
 STRING="$2"
 
