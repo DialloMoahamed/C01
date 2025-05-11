@@ -10,10 +10,7 @@ elif  [ "$op" = "-" ]; then
 elif  [ "$op" = "*" ]; then 
     result=$((a * b))
 elif  [ "$op" = "/" ]; then 
-    result=$((a / b))
-else
-    echo "Opérateur incorect." 
-    exit 1   
+    result=$((a / b))   
 fi
 echo "Résultat : $result"
 
