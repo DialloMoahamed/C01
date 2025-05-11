@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "Entrez le nom d'un dossier :"
+read dossier
 
-count=$(ls -l "$1"| wc -l | tr -s " " " " )
-echo "Le dossier $1 contient $count fichier(s)."
+count=$(ls -p "$dossier" | grep -v / | wc -l)
+counts=$(echo $count)
+echo "Le dossier $dossier contient $counts fichier(s)."
